@@ -21,12 +21,9 @@ public abstract class ElectricVehicle extends Vehicle {
     }
 
     public void rechargeBattery() throws VehicleNotAvailableForRechargingException {
-        switch (this.getVehicleStatus()) {
-            case AVAILABLE, IN_MAINTENANCE:
-                this.batteryPercentage = 100;
-                break;
-            case IN_USE:
-                throw new VehicleNotAvailableForRechargingException("Não é possível recarregar o veículo pois ele está em uso");
+        if (this.isInUse()) {
+            throw new VehicleNotAvailableForRechargingException("Não é possível recarregar o veículo pois ele está em uso");
         }
+        this.batteryPercentage = 100;
     }
 }

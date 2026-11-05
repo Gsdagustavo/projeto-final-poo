@@ -29,6 +29,10 @@ public abstract class Vehicle {
         return vehicleStatus;
     }
 
+    public void setVehicleStatus(VehicleStatus vehicleStatus) {
+        this.vehicleStatus = vehicleStatus;
+    }
+
     public double getUnlockingFee() {
         return unlockingFee;
     }

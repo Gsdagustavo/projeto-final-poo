@@ -1,6 +1,8 @@
 package com.gsdagustavo.entities.station;
 
+import com.gsdagustavo.entities.exception.ElectricVehicleChargeTooLow;
 import com.gsdagustavo.entities.exception.StationFullException;
+import com.gsdagustavo.entities.vehicle.ElectricVehicle;
 import com.gsdagustavo.entities.vehicle.Vehicle;
 
 import java.util.List;
@@ -37,14 +39,27 @@ public class Station {
         return vehicles;
     }
 
-    public Vehicle takeVehicle(int vehicleCode) {
+    public Vehicle takeVehicle(int vehicleCode) throws ElectricVehicleChargeTooLow {
+        Vehicle vehicle;
         for (final var it : vehicles) {
             if (it.getCode() == vehicleCode) {
-                vehicles.remove(it);
-                return it;
+                vehicle = it;
             }
         }
-        return null;
+
+        if (vehicle == null) {
+            return null;
+        }
+
+        if (vehicle instanceof ElectricVehicle) {
+            if (((ElectricVehicle) vehicle).getBatteryPercentage() < 20) {
+                throw new ElectricVehicleChargeTooLow("A carga do veículo está baixa, não é possível alugá-lo");
+            }
+        }
+
+        vehicles.remove(vehicle);
+
+        return vehicle;
     }
 
     public void storeVehicle(Vehicle vehicle) throws StationFullException {
