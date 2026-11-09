@@ -4,6 +4,7 @@ import com.gsdagustavo.entities.exception.ElectricVehicleChargeTooLow;
 import com.gsdagustavo.entities.exception.StationFullException;
 import com.gsdagustavo.entities.vehicle.ElectricVehicle;
 import com.gsdagustavo.entities.vehicle.Vehicle;
+import com.gsdagustavo.entities.vehicle.VehicleStatus;
 
 import java.util.List;
 
@@ -40,7 +41,7 @@ public class Station {
     }
 
     public Vehicle takeVehicle(int vehicleCode) throws ElectricVehicleChargeTooLow {
-        Vehicle vehicle;
+        Vehicle vehicle = null;
         for (final var it : vehicles) {
             if (it.getCode() == vehicleCode) {
                 vehicle = it;
@@ -57,13 +58,13 @@ public class Station {
             }
         }
 
-        vehicles.remove(vehicle);
+        vehicle.setVehicleStatus(VehicleStatus.IN_USE);
 
         return vehicle;
     }
 
     public void storeVehicle(Vehicle vehicle) throws StationFullException {
-        if (vehicles.size() >= vacancies) {
+        if (vehicles.size() >= getAvailableVacancies()) {
             throw new StationFullException("A estação está lotada.");
         }
         vehicles.add(vehicle);
