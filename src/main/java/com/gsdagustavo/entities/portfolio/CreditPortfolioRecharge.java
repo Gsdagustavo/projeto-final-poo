@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.user;
+package com.gsdagustavo.entities.portfolio;
 
 import java.time.LocalDateTime;
 
@@ -15,15 +15,7 @@ public class CreditPortfolioRecharge {
         return rechargedAt;
     }
 
-    public void setRechargedAt(LocalDateTime rechargedAt) {
-        this.rechargedAt = rechargedAt;
-    }
-
     public double getValue() {
         return value;
-    }
-
-    public void setValue(double value) {
-        this.value = value;
     }
 }

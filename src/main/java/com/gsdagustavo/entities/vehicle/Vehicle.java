@@ -44,4 +44,8 @@ public abstract class Vehicle {
     public boolean isInUse() {
         return vehicleStatus == VehicleStatus.IN_USE;
     }
+
+    public boolean isAvailable() {
+        return vehicleStatus == VehicleStatus.AVAILABLE;
+    }
 }

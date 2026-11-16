@@ -2,6 +2,8 @@ package com.gsdagustavo.entities.station;
 
 import com.gsdagustavo.entities.exception.ElectricVehicleChargeTooLow;
 import com.gsdagustavo.entities.exception.StationFullException;
+import com.gsdagustavo.entities.exception.VehicleAlreadyInUseException;
+import com.gsdagustavo.entities.exception.VehicleInMaintenanceException;
 import com.gsdagustavo.entities.vehicle.ElectricVehicle;
 import com.gsdagustavo.entities.vehicle.Vehicle;
 import com.gsdagustavo.entities.vehicle.VehicleStatus;
@@ -40,7 +42,7 @@ public class Station {
         return vehicles;
     }
 
-    public Vehicle takeVehicle(int vehicleCode) throws ElectricVehicleChargeTooLow {
+    public Vehicle takeVehicle(int vehicleCode) throws VehicleInMaintenanceException, VehicleAlreadyInUseException, ElectricVehicleChargeTooLow {
         Vehicle vehicle = null;
         for (final var it : vehicles) {
             if (it.getCode() == vehicleCode) {
@@ -52,9 +54,17 @@ public class Station {
             return null;
         }
 
+        if (vehicle.getVehicleStatus() == VehicleStatus.IN_MAINTENANCE) {
+            throw new VehicleInMaintenanceException("O veículo está em manutenção.");
+        }
+
+        if (vehicle.getVehicleStatus() == VehicleStatus.IN_USE) {
+            throw new VehicleAlreadyInUseException("O veículo já está em uso por outra pessoa.");
+        }
+
         if (vehicle instanceof ElectricVehicle) {
             if (((ElectricVehicle) vehicle).getBatteryPercentage() < 20) {
-                throw new ElectricVehicleChargeTooLow("A carga do veículo está baixa, não é possível alugá-lo");
+                throw new ElectricVehicleChargeTooLow("A carga do veículo está baixa, não é possível alugá-lo.");
             }
         }
 

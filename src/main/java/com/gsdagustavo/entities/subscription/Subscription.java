@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.user;
+package com.gsdagustavo.entities.subscription;
 
 import com.gsdagustavo.entities.vehicle.Vehicle;
 
