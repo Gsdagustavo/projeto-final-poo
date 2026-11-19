@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.vehicle;
+package com.gsdagustavo.model.entities.vehicle;
 
 public class ElectricScooter extends ElectricVehicle {
     public static final double UNLOCKING_FEE = 3.0;

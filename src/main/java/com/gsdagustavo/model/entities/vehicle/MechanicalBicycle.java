@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.vehicle;
+package com.gsdagustavo.model.entities.vehicle;
 
 public class MechanicalBicycle extends Vehicle {
     public static final double UNLOCKING_FEE = 1.0;

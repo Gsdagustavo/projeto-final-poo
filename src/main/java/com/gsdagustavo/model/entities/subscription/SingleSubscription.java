@@ -1,6 +1,6 @@
-package com.gsdagustavo.entities.subscription;
+package com.gsdagustavo.model.entities.subscription;
 
-import com.gsdagustavo.entities.vehicle.Vehicle;
+import com.gsdagustavo.model.entities.vehicle.Vehicle;
 
 public class SingleSubscription extends Subscription {
     @Override

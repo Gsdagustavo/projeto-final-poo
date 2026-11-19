@@ -1,11 +1,11 @@
-package com.gsdagustavo.entities.vehicle;
+package com.gsdagustavo.model.entities.vehicle;
 
-import com.gsdagustavo.entities.exception.InvalidValueException;
-import com.gsdagustavo.entities.exception.VehicleAlreadyInUseException;
-import com.gsdagustavo.entities.exception.VehicleHasNoBatteryException;
-import com.gsdagustavo.entities.exception.VehicleInMaintenanceException;
-import com.gsdagustavo.entities.exception.VehicleNotInMaintenanceException;
-import com.gsdagustavo.entities.exception.VehicleNotInUseException;
+import com.gsdagustavo.model.entities.exception.InvalidValueException;
+import com.gsdagustavo.model.entities.exception.VehicleAlreadyInUseException;
+import com.gsdagustavo.model.entities.exception.VehicleHasNoBatteryException;
+import com.gsdagustavo.model.entities.exception.VehicleInMaintenanceException;
+import com.gsdagustavo.model.entities.exception.VehicleNotInMaintenanceException;
+import com.gsdagustavo.model.entities.exception.VehicleNotInUseException;
 
 public abstract class Vehicle {
     private final String code;

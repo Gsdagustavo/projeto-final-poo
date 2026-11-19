@@ -1,8 +1,8 @@
-package com.gsdagustavo.entities.subscription;
+package com.gsdagustavo.model.entities.subscription;
 
-import com.gsdagustavo.entities.exception.InvalidValueException;
-import com.gsdagustavo.entities.util.MoneyUtils;
-import com.gsdagustavo.entities.vehicle.Vehicle;
+import com.gsdagustavo.model.entities.exception.InvalidValueException;
+import com.gsdagustavo.model.entities.util.MoneyUtils;
+import com.gsdagustavo.model.entities.vehicle.Vehicle;
 
 public abstract class Subscription {
     public double calculatePriceToPay(Vehicle vehicle, long minutes) {

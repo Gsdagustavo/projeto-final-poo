@@ -1,19 +1,19 @@
-package com.gsdagustavo.entities.user;
+package com.gsdagustavo.model.entities.user;
 
-import com.gsdagustavo.entities.exception.InsufficientBalanceException;
-import com.gsdagustavo.entities.exception.InvalidDateException;
-import com.gsdagustavo.entities.exception.InvalidValueException;
-import com.gsdagustavo.entities.exception.NoTravelInProgressException;
-import com.gsdagustavo.entities.exception.TravelInProgressException;
-import com.gsdagustavo.entities.portfolio.CreditPortfolio;
-import com.gsdagustavo.entities.portfolio.CreditPortfolioRecharge;
-import com.gsdagustavo.entities.statement.StatementEntry;
-import com.gsdagustavo.entities.statement.StatementLine;
-import com.gsdagustavo.entities.station.Station;
-import com.gsdagustavo.entities.subscription.Subscription;
-import com.gsdagustavo.entities.travel.Travel;
-import com.gsdagustavo.entities.util.MoneyUtils;
-import com.gsdagustavo.entities.vehicle.Vehicle;
+import com.gsdagustavo.model.entities.exception.InsufficientBalanceException;
+import com.gsdagustavo.model.entities.exception.InvalidDateException;
+import com.gsdagustavo.model.entities.exception.InvalidValueException;
+import com.gsdagustavo.model.entities.exception.NoTravelInProgressException;
+import com.gsdagustavo.model.entities.exception.TravelInProgressException;
+import com.gsdagustavo.model.entities.portfolio.CreditPortfolio;
+import com.gsdagustavo.model.entities.portfolio.CreditPortfolioRecharge;
+import com.gsdagustavo.model.entities.statement.StatementEntry;
+import com.gsdagustavo.model.entities.statement.StatementLine;
+import com.gsdagustavo.model.entities.station.Station;
+import com.gsdagustavo.model.entities.subscription.Subscription;
+import com.gsdagustavo.model.entities.travel.Travel;
+import com.gsdagustavo.model.entities.util.MoneyUtils;
+import com.gsdagustavo.model.entities.vehicle.Vehicle;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

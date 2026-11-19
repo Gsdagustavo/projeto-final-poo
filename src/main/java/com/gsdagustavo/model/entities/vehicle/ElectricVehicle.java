@@ -1,8 +1,8 @@
-package com.gsdagustavo.entities.vehicle;
+package com.gsdagustavo.model.entities.vehicle;
 
-import com.gsdagustavo.entities.exception.ElectricVehicleChargeTooLowException;
-import com.gsdagustavo.entities.exception.InvalidValueException;
-import com.gsdagustavo.entities.exception.VehicleNotAvailableForRechargingException;
+import com.gsdagustavo.model.entities.exception.ElectricVehicleChargeTooLowException;
+import com.gsdagustavo.model.entities.exception.InvalidValueException;
+import com.gsdagustavo.model.entities.exception.VehicleNotAvailableForRechargingException;
 
 public abstract class ElectricVehicle extends Vehicle {
     public static final int MINIMUM_BATTERY_PERCENTAGE_TO_UNLOCK = 20;

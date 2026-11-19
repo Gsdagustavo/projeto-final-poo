@@ -1,6 +1,6 @@
-package com.gsdagustavo.entities.report;
+package com.gsdagustavo.model.entities.report;
 
-import com.gsdagustavo.entities.util.MoneyUtils;
+import com.gsdagustavo.model.entities.util.MoneyUtils;
 
 public class BillingReportLine {
     private final String vehicleTypeName;

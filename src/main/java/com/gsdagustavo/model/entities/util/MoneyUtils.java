@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.util;
+package com.gsdagustavo.model.entities.util;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

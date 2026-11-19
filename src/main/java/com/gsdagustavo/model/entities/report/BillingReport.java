@@ -1,8 +1,8 @@
-package com.gsdagustavo.entities.report;
+package com.gsdagustavo.model.entities.report;
 
-import com.gsdagustavo.entities.exception.InvalidDateException;
-import com.gsdagustavo.entities.travel.Travel;
-import com.gsdagustavo.entities.util.MoneyUtils;
+import com.gsdagustavo.model.entities.exception.InvalidDateException;
+import com.gsdagustavo.model.entities.travel.Travel;
+import com.gsdagustavo.model.entities.util.MoneyUtils;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

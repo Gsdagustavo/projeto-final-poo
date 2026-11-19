@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.exception;
+package com.gsdagustavo.model.entities.exception;
 
 public class VehicleAlreadyInUseException extends GiroBluException {
     public VehicleAlreadyInUseException(String message) {

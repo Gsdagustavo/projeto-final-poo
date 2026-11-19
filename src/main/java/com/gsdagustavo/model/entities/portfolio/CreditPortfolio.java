@@ -1,7 +1,7 @@
-package com.gsdagustavo.entities.portfolio;
+package com.gsdagustavo.model.entities.portfolio;
 
-import com.gsdagustavo.entities.exception.InvalidValueException;
-import com.gsdagustavo.entities.util.MoneyUtils;
+import com.gsdagustavo.model.entities.exception.InvalidValueException;
+import com.gsdagustavo.model.entities.util.MoneyUtils;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

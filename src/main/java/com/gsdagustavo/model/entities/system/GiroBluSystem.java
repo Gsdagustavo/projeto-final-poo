@@ -1,16 +1,16 @@
-package com.gsdagustavo.entities.system;
+package com.gsdagustavo.model.entities.system;
 
-import com.gsdagustavo.entities.exception.DuplicateRegistrationException;
-import com.gsdagustavo.entities.exception.InvalidValueException;
-import com.gsdagustavo.entities.exception.NotFoundException;
-import com.gsdagustavo.entities.portfolio.CreditPortfolioRecharge;
-import com.gsdagustavo.entities.report.BillingReport;
-import com.gsdagustavo.entities.statement.StatementLine;
-import com.gsdagustavo.entities.station.Station;
-import com.gsdagustavo.entities.subscription.Subscription;
-import com.gsdagustavo.entities.travel.Travel;
-import com.gsdagustavo.entities.user.User;
-import com.gsdagustavo.entities.vehicle.Vehicle;
+import com.gsdagustavo.model.entities.exception.DuplicateRegistrationException;
+import com.gsdagustavo.model.entities.exception.InvalidValueException;
+import com.gsdagustavo.model.entities.exception.NotFoundException;
+import com.gsdagustavo.model.entities.portfolio.CreditPortfolioRecharge;
+import com.gsdagustavo.model.entities.report.BillingReport;
+import com.gsdagustavo.model.entities.statement.StatementLine;
+import com.gsdagustavo.model.entities.station.Station;
+import com.gsdagustavo.model.entities.subscription.Subscription;
+import com.gsdagustavo.model.entities.travel.Travel;
+import com.gsdagustavo.model.entities.user.User;
+import com.gsdagustavo.model.entities.vehicle.Vehicle;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

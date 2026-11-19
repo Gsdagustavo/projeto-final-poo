@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.statement;
+package com.gsdagustavo.model.entities.statement;
 
 import java.time.LocalDateTime;
 

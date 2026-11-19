@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.exception;
+package com.gsdagustavo.model.entities.exception;
 
 public class VehicleNotInMaintenanceException extends GiroBluException {
     public VehicleNotInMaintenanceException(String message) {

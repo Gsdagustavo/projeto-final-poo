@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.vehicle;
+package com.gsdagustavo.model.entities.vehicle;
 
 public enum VehicleStatus {
     AVAILABLE,

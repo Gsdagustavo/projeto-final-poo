@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.exception;
+package com.gsdagustavo.model.entities.exception;
 
 public class ElectricVehicleChargeTooLowException extends GiroBluException {
     public ElectricVehicleChargeTooLowException(String message) {

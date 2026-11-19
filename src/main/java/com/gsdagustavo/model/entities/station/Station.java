@@ -1,10 +1,10 @@
-package com.gsdagustavo.entities.station;
+package com.gsdagustavo.model.entities.station;
 
-import com.gsdagustavo.entities.exception.InvalidValueException;
-import com.gsdagustavo.entities.exception.NotFoundException;
-import com.gsdagustavo.entities.exception.StationFullException;
-import com.gsdagustavo.entities.exception.VehicleAlreadyInUseException;
-import com.gsdagustavo.entities.vehicle.Vehicle;
+import com.gsdagustavo.model.entities.exception.InvalidValueException;
+import com.gsdagustavo.model.entities.exception.NotFoundException;
+import com.gsdagustavo.model.entities.exception.StationFullException;
+import com.gsdagustavo.model.entities.exception.VehicleAlreadyInUseException;
+import com.gsdagustavo.model.entities.vehicle.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;

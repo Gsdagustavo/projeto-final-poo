@@ -1,13 +1,13 @@
-package com.gsdagustavo.entities.travel;
+package com.gsdagustavo.model.entities.travel;
 
-import com.gsdagustavo.entities.exception.InvalidDateException;
-import com.gsdagustavo.entities.exception.InvalidValueException;
-import com.gsdagustavo.entities.exception.NoTravelInProgressException;
-import com.gsdagustavo.entities.exception.StationFullException;
-import com.gsdagustavo.entities.statement.StatementEntry;
-import com.gsdagustavo.entities.station.Station;
-import com.gsdagustavo.entities.subscription.Subscription;
-import com.gsdagustavo.entities.vehicle.Vehicle;
+import com.gsdagustavo.model.entities.exception.InvalidDateException;
+import com.gsdagustavo.model.entities.exception.InvalidValueException;
+import com.gsdagustavo.model.entities.exception.NoTravelInProgressException;
+import com.gsdagustavo.model.entities.exception.StationFullException;
+import com.gsdagustavo.model.entities.statement.StatementEntry;
+import com.gsdagustavo.model.entities.station.Station;
+import com.gsdagustavo.model.entities.subscription.Subscription;
+import com.gsdagustavo.model.entities.vehicle.Vehicle;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

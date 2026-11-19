@@ -1,4 +1,4 @@
-package com.gsdagustavo.entities.exception;
+package com.gsdagustavo.model.entities.exception;
 
 public class InvalidValueException extends GiroBluException {
     public InvalidValueException(String message) {
