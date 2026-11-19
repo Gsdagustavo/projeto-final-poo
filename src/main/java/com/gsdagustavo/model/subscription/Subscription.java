@@ -1,0 +1,21 @@
+package com.gsdagustavo.model.subscription;
+
+import com.gsdagustavo.model.exception.InvalidValueException;
+import com.gsdagustavo.model.util.MoneyUtils;
+import com.gsdagustavo.model.vehicle.Vehicle;
+
+public abstract class Subscription {
+    public double calculatePriceToPay(Vehicle vehicle, long minutes) {
+        if (vehicle == null) {
+            throw new InvalidValueException("O veículo é obrigatório.");
+        }
+        if (minutes < 0) {
+            throw new InvalidValueException("A duração da viagem não pode ser negativa.");
+        }
+        return MoneyUtils.round(calculatePrice(vehicle, minutes));
+    }
+
+    protected abstract double calculatePrice(Vehicle vehicle, long minutes);
+
+    public abstract String getName();
+}
