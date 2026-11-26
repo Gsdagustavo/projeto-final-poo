@@ -27,10 +27,10 @@ public class MainUi extends JFrame {
         add(btnFleet);
         add(btnBilling);
 
-        btnRegistration.setEnabled(false);
-        btnUser.setEnabled(false);
-        btnFleet.setEnabled(false);
-        btnBilling.setEnabled(false);
+        btnRegistration.addActionListener(e -> new RegistrationUi(system).setVisible(true));
+        btnUser.addActionListener(e -> new UserUi(system).setVisible(true));
+        btnFleet.addActionListener(e -> new FleetUi(system).setVisible(true));
+        btnBilling.addActionListener(e -> new BillingUi(system).setVisible(true));
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(180, 200);
